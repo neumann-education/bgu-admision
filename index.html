@@ -33,10 +33,12 @@
 
         body {
             font-family: 'Segoe UI', sans-serif;
-            background: var(--background-color);
+            /* Cambia la siguiente línea: */
+            background: var(--background-color) url('https://cdn.bitrix24.es/b15495391/landing/164/164ee2aa6aea49cb44d001c7da59a84c/beta-port-01_1x.jpg') no-repeat center center / cover;
+            background-attachment: fixed; /* Opcional: hace que el fondo no se mueva al hacer scroll */
             color: var(--text-color);
             line-height: 1.4;
-            min-height: 100vh;
+            min-height: 100vh; /* Importante para que el fondo cubra toda la altura */
         }
 
         .container {
